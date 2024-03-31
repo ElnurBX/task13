@@ -1,0 +1,63 @@
+.package{
+    padding:120px 50px 0;
+    &__header{
+        text-align: center;
+        padding-bottom: 60px;
+        h5{
+            font-size: 24px;
+            color: $primary;
+            margin-bottom: 4px;
+            line-height: 1.2;
+        }
+        h2{
+            font-size: 40px;
+            line-height: 1.5;
+            font-weight: 500;
+        }
+    }
+    &__main{  
+        justify-content: space-between;
+        gap: 30px;
+        &__item{ 
+            position: relative;
+            &__img{
+                overflow: hidden;
+                display: block;
+                height: 100%;
+                width: 100%;
+                img{
+                    transition: 0.3s;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            &__discription{
+                &__review{
+                    span{
+                        font-size: 15px;
+                        margin-left: 8px;
+                    }
+                }
+                &__timedata{
+                    margin-top: 8px;
+                    font-size: 18px;
+                }
+                position: absolute;
+                bottom: 0;
+                padding: 32px 30px;
+                color:$white;
+                a{
+                    font-size: 22px;
+                    color: $white;
+                    line-height:1.6;
+                }
+            }
+            &:hover a{
+                color: $primary;
+            }
+            &:hover &__img img{
+                transform: scale(1.2);
+            }
+        }
+    }
+}

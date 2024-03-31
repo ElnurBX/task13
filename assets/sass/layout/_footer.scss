@@ -1,0 +1,143 @@
+.footer{
+    padding-top: 70px;
+    margin-top: 70px;
+    background-size: cover;
+    background-position: top center;
+    background:linear-gradient(rgba(8, 8, 11, .8) 100%, rgba(8, 8, 11, .8) 100%), url(https://arid-html.vercel.app/main-file/dist/assets/images/backgrounds/footer-bg-1.webp);
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 30px;
+        gap: 30px;
+        align-items: center;
+        &__icons{
+            
+            gap: 30px;
+            a{
+                color: $white;
+                align-items: center;
+                gap: 30px;
+                h5{
+                    font-size: 20px;
+                    font-weight: 700;
+                }
+                span{
+                    transition: 0.3s;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: $basetext;
+                    line-height: 40px;
+                    width: 40px;
+                    font-size: 25px;
+                    height: 40px;
+                    border-radius: 50%;
+                    outline:5px solid #ffffff31 ;
+                    background-color: #fff;
+                    
+                        
+                }
+                &:hover span{
+                    color: #fff;
+                    background-color: $primary;
+                    outline:5px solid rgba(250 ,116, 82,0.6) ;
+                }
+            }
+        }
+    }
+    &__mid{
+        position: relative;
+        padding: 70px 0;
+        &::before{
+            content: "";
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 2px;
+            width: 100%;
+            background-image: linear-gradient(90deg, rgba(53, 53, 53, 0) 0%, rgba(53, 53, 53, 0.8) 48.96%, rgba(53, 53, 53, 0) 100%);
+        }
+        &__form{
+            &__input{
+                position: relative;
+                input{
+                    border: solid 1px ;
+                    border: 1PX solid #FFFFFF31;
+                    outline: 0;
+                    width: 60%;
+                    background-color: transparent;
+                    padding: 12px 20px 12px 48px;
+                    &:focus{
+                        border-color: rgba(235 ,119 ,102,0.8 );
+                    }
+                }
+                &__svg{
+                    color: #fff;
+                    position: absolute;
+                    top: 35%;
+                    left: 20px;
+                }
+            }
+            .btn-primary__v2{
+                margin-top: 20px;
+                width: 75%;
+                justify-content: center;
+                font-weight: 600;
+                font-size: 16px;
+            }
+        }
+        h2{
+            font-size: 25px;
+            line-height: 1.5;
+            color: $white;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+        ul{
+            li{
+                margin-top: 14px;
+                a{
+                    color:$white;
+                    font-size: 16px;
+                    svg{
+                        color: $primary;
+                        vertical-align: middle;
+                    }
+                }
+                &:hover a{
+                    color: $primary;
+                }
+            }
+        }
+    }
+    &__bottom{
+        padding: 20px 0;
+        justify-content: space-between;
+        color: $white;
+        position: relative;
+        &::before{
+            position: absolute;
+            content: "";
+            top: 0px;
+            left: 0px;
+            height: 2px;
+            width: 100%;
+            background-image: linear-gradient(90deg, rgba(53, 53, 53, 0) 0%, rgba(53, 53, 53, 0.8) 48.96%, rgba(53, 53, 53, 0) 100%);
+        }
+        &__up{
+            position: relative;
+            a{
+                background-color: $primary;
+                border-radius: 50%;
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 40px;
+                height: 40px;
+                top: -250%;
+                color: $white;
+            }
+        }
+    }
+}

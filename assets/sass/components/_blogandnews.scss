@@ -1,0 +1,79 @@
+.blogandnews{
+    padding: 120px 0;
+    &__header{
+        text-align: center;
+        padding-bottom: 60px;
+        h5{
+            font-size: 24px;
+            color: $primary;
+            line-height: 1.2;
+        }
+        h2{
+            font-size: 40px;
+            line-height: 1.5;
+            font-weight: 500;
+        }
+    }
+    &__main{
+        gap: 60px;
+        &__item{
+            box-shadow: var(--shadow1, 0 0 #0000), 
+            var(--shadow2, 0 0 #0000), 
+            var(--shadow3, 4px 3px 40px rgba(16, 33, 34, 0.06));
+            &__img{
+                overflow: hidden;
+                img{
+                    width:  100%;
+                    transition: 220ms;
+                }
+            }
+            &:hover &__img img{
+                transform: scale(1.1);
+            }
+            &__bottom{
+                padding: 30px 70px  30px 44px;
+                &__userandtime{
+                    display: flex;
+                    align-items: center;
+                    line-height: 1.5;
+                    
+                    gap: 5px;
+                    svg{
+                        vertical-align: middle;
+                        margin-right: 10px;
+                    }
+                }
+                &__detalis{
+                    &__head{
+                        transition: 200ms;
+                        font-size:22px ;
+                        line-height: 1.5;
+                        font-weight: 500;
+                        padding-top:0.5rem ;
+                        margin-top: 0.25rem;
+                        color: $basetext;
+                    } 
+                    p{
+                        font-size: 16px;
+                        line-height: 1.9;
+                        margin-top: 10px;
+                    }
+                    &__readmore{
+                        display: block;
+                        margin-top: 18px;
+                        font-weight: 500;
+                        font-size: 14px;
+                        color: $primary;
+                        svg{
+                            vertical-align: middle;
+                        }
+                    }
+                }
+            
+            }
+            &:hover &__bottom__detalis__head{
+                color: $primary;
+            }
+        }
+    }
+}

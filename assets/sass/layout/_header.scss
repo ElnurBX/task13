@@ -1,0 +1,70 @@
+header{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow:  0 10px 15px -3px rgba(0 ,0 ,0 , 0.1), 0 4px 6px -4px rgba(0 ,0 ,0 , 0.1);
+        .header{
+        &__top{
+            position: absolute;
+            z-index: 100;
+            background-color: #fff;
+            color: $basetext !important;
+            position:sticky;
+            top: 0px;
+            z-index: 100;
+            &__left{
+                display: flex;
+                align-items: center;
+            }
+                padding: 20px 0;
+                
+                display: flex;
+                align-items: center;
+            .container{
+                justify-content: space-between;
+            }
+            &__center{
+                position: relative;
+                color:$basetext;
+                align-items: center;
+                justify-content: space-between;
+                ul{
+                    gap:20px;
+                }
+                
+            }
+            &__right{
+                display: flex;
+                align-items: center;
+                gap: 20px   ;
+                a{
+                    color: $basetext;
+
+                }
+                svg{
+                    vertical-align: middle;
+                }
+                &__login{
+                    color: $white!important;
+                    width: 48px;
+                    height: 48px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: $primary;
+                    border-radius: 50%;
+                    &:hover{
+                        opacity: 0.8;
+                    }
+                }
+                &__cart{
+                    transition: 0.5s;
+                    &:hover{
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
+}

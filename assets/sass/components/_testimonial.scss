@@ -1,0 +1,64 @@
+.testimonial{
+    margin-top: 120px;
+    &__carusel{
+        align-items: center;
+        justify-content: space-between;
+        &__sliders {
+            overflow: hidden;
+            box-shadow: var(--shadow1, 0 0 #0000), 
+            var(--shadow2, 0 0 #0000), 
+            var(--shadow3, 8px 5px 45px rgba(0, 0, 0, 0.08));
+            scroll-behavior: smooth;
+            &__slider{
+                width: 200%;
+                
+                
+                &__slide{padding: 56px 80px;
+                    &__img{
+                        text-align: center;
+                        h4{
+                            margin-top: 16px;
+                            font-size: 24px;
+                        }
+                        h5{
+                            font-size: 16px;
+                            margin-top: 4px;
+                        }
+                    }
+                    &__discript{
+                        p{
+                            font-style: italic;
+                            margin: 1.5rem 0;
+                            line-height: 1.8;
+                            font-weight: 400;
+                            font-size:25px ;
+                        }
+                        &__end{
+                            display: flex;
+                            justify-content: end;
+                            svg{
+                            transform: rotate(180deg); 
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        a{
+            color: $primary;
+            path{
+                transition: 0.3s;
+            }
+        }
+        &__left:hover{
+            path{
+                transform: translate(-10%,0);
+            }
+        }
+        &__right:hover{
+            path{
+                transform: translate(10%,0);
+            }
+        }
+    }
+}

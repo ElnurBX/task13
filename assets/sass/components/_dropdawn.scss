@@ -1,0 +1,57 @@
+.dropdawn{
+    li{
+        position: relative;
+        &:hover .dropdawn__item {
+            opacity: 1;
+            visibility: visible;
+            top: 40px;
+        }
+    }
+
+    &__item{
+        transition: 0.5s;
+        top: 100px;
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+        ul{
+            width: 200px;
+            padding: 20px;
+            background-color: #fff;
+            li{
+                padding: 10px 10px;
+                border-bottom: 1px solid gray;
+                &:last-child{
+                    border: 0;
+                }
+                &:hover a{
+                    color: $primary;
+                }
+                a{
+                    color: $basetext;
+                }
+            }
+        }
+        &__destination{
+            right: 0;
+            height: 320px !important;
+            background: #fff;
+            &__main__ul{
+            
+                width: 400px !important;
+                display: flex;
+                flex-wrap: wrap;
+                li{
+                    width: 20%;
+                }
+            }
+            &__img{
+                width: 250px;
+                height: 250px;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
